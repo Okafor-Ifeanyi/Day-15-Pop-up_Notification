@@ -307,19 +307,27 @@ select {
     color: #f97300;
    
 }
-.space-category{
+.space-category, .space-clients{
     /* height: 40vh; */
     width: 100%;
     margin: 100px 0;
     display: flex;
     flex-direction: column;
 }
-.space-category .title {
+.space-clients{
+    background-color: #CFD5D9;
+    padding: 30px;
+    border-radius: 20px;
+}
+.space-category .title , .space-clients .title{
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: space-between;
     font-size: 30px;
+}
+.space-clients .title h1{
+    max-width: 30%;
 }
 .space-category .cat-items{
     display: flex;
@@ -382,7 +390,7 @@ select {
     /* background-size: cover;
     background-position: center;
     background-repeat: no-repeat; */
-    background-color: #f97300;
+    background-color: #fad7b891;
     border-radius: 20px;
 }
 .containers .content-1{
@@ -425,6 +433,57 @@ select {
 .amt i, .amt h3{
     padding-right: 15px;
 }
+.space-clients .client-items{
+    margin: 20px 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.space-clients .client-type{
+    padding: 50px 30px;
+    background-color: white;
+    flex-basis: 45%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+.space-clients .image-spacing{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    background-image: url(./img/seafood.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.space-clients .client-id{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.space-clients .name h3, h5 {
+    padding: 5px 20px;
+}
+.space-clients .client-rating{
+    color: grey;
+    margin: 10px 0;
+    font-size: 20px;
+}
+.space-clients .client-review{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.gold{
+    color: gold;
+}
+
 .cart-border{
     display: flex;
     justify-content: center;
