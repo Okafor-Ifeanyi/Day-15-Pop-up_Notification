@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "stylus": "^0.59.0"
+    "stylus": "^0.59.0",
+    "swiper": "^8.4.4"
   }
 }

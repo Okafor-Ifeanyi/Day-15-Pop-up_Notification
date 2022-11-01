@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/86f7c65c66.js" crossorigin="anonymous"></script>
     <title>Pop-up BIO</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="./scripts.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    
     <script src="https://kit.fontawesome.com/4350b7db58.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -66,7 +67,7 @@
                                         dummy texts to be replaced by more relevant
                                          information later</p>
 
-                                    <a href=""><button class="order-now">Order Now</button></a>
+                                    <button class="order-now" onclick="openPopup()">Order Now</button>
                                 </div>
                             </div>
                         </div>
@@ -93,32 +94,44 @@
                 <div class="title">
                     <h1>Top Category</h1><span>See All</span>
                 </div>
-                <div class="cat-items">
-                        <div class="cat-type">
-                            <div class="image-spacing">
-                                <img src="./img/spag.jpg" alt="">
+                <div class="slide-container swiper">
+                    <div class="slide-content" >
+                        <div class="cat-items swiper-wrapper">
+                            <div class="cat-type swiper-slide">
+                                <div class="image-spacing">
+                                    <img src="./img/spag.jpg" alt="">
+                                </div>
+                                <h3>Fast Food</h3>
                             </div>
-                            <h3>Fast Food</h3>
-                        </div>
-                        <div class="cat-type">
-                            <div class="image-spacing">
-                                <img src="./img/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="">
+                            <div class="cat-type swiper-slide">
+                                <div class="image-spacing">
+                                    <img src="./img/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="">
+                                </div>
+                                <h3>Pizza</h3>
                             </div>
-                            <h3>Pizza</h3>
-                        </div>
-                        <div class="cat-type">
-                            <div class="image-spacing">
-                                <img src="./img/seafood.jpg" alt="">
+                            <div class="cat-type swiper-slide">
+                                <div class="image-spacing">
+                                    <img src="./img/seafood.jpg" alt="">
+                                </div>
+                                <h3>Sea Food</h3>
                             </div>
-                            <h3>Sea Food</h3>
-                        </div>
-                        <div class="cat-type">
-                            <div class="image-spacing">
-                                <img src="./img/drinks.jpg" alt="">
+                            <div class="cat-type swiper-slide">
+                                <div class="image-spacing">
+                                    <img src="./img/drinks.jpg" alt="">
+                                </div>
+                                <h3>Drinks</h3>
                             </div>
-                            <h3>Drinks</h3>
                         </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
+                
+                
                 
             </div>
 
@@ -133,7 +146,7 @@
                             <i class="fa-regular fa-heart"></i>
                         </div>
                         <div class="content-2">
-                            <h4 class="grey">Rice</h4>
+                            <h4 class="grey">Normal Jollof</h4>
                             <h2>$32</h2>
                             <div class="amt">
                                 <i class="fa-regular fa-square-minus"></i>
@@ -148,7 +161,7 @@
                             <i class="fa-solid fa-heart"></i>
                         </div>
                         <div class="content-2">
-                            <h4 class="grey">Rice</h4>
+                            <h4 class="grey">NIgerian Jollof</h4>
                             <h2>$32</h2>
                             <div class="amt">
                                 <i class="fa-regular fa-square-minus"></i>
@@ -163,7 +176,7 @@
                             <i class="fa-regular fa-heart"></i>
                         </div>
                         <div class="content-2">
-                            <h4 class="grey">Rice</h4>
+                            <h4 class="grey">Ghana Jollof</h4>
                             <h2>$32</h2>
                             <div class="amt">
                                 <i class="fa-regular fa-square-minus"></i>
@@ -178,7 +191,7 @@
                             <i class="fa-solid fa-heart"></i>
                         </div>
                         <div class="content-2">
-                            <h4 class="grey">Rice</h4>
+                            <h4 class="grey">Ugandan Jollof</h4>
                             <h2>$32</h2>
                             <div class="amt">
                                 <i class="fa-regular fa-square-minus"></i>
@@ -193,10 +206,10 @@
                             <i class="fa-regular fa-heart"></i>
                         </div>
                         <div class="content-2">
-                            <h4 class="grey">Rice</h4>
+                            <h4 class="grey">My Jollof</h4>
                             <h2>$32</h2>
                             <div class="amt">
-                                <i class="fa-regular fa-square-minus"></i>
+                                <i class="fa-regular fa-square-minus fa-solid"></i>
                                 <h3>2</h3>
                                 <i class="fa-regular fa-square-plus"></i>
                             </div>
@@ -208,7 +221,7 @@
                             <i class="fa-solid fa-heart"></i>
                         </div>
                         <div class="content-2">
-                            <h4 class="grey">Rice</h4>
+                            <h4 class="grey">Prison Jollof</h4>
                             <h2>$32</h2>
                             <div class="amt">
                                 <i class="fa-regular fa-square-minus"></i>
@@ -256,8 +269,8 @@
                                 <img src="./img/spag.jpg" alt="">
                             </div>
                             <div class="name">
-                                <h3>Anita Ruth</h3>
-                                <h5>Banker</h5>
+                                <h3>Okafor Ifeanyi</h3>
+                                <h5>Web Developer</h5>
                             </div>
                         </div>
                         <div class="client-rating">
@@ -277,39 +290,129 @@
             </div>
 
 
-            <div class="space-clients">
-                <div class="download">
-                    <h1>Download App</h1>
-                    <p>Lorem ipsum is a dummy text used for typing
-                        dummy texts to be 
-                        replaced by more relevant information later</p>
-                    <div class="apps">
-                        <div class="app-item">
-                            <img src="" alt="">
-                            <div class="app-text">
-                                <h3>Get it on</h3>
-                                <h1>Google Play</h1>
-                            </div>
-                        </div>
+            <div class="space-download">
+                <div class="download-item">
+                    <div class="text">
+                        <h1>Download App</h1>
+                        <p>Lorem ipsum is a dummy text used for typing
+                            dummy texts to be 
+                            replaced by more relevant information later
+                            Lorem ipsum is a dummy text used for typing
+                            dummy texts to be 
+                            replaced by more relevant information later
+                        </p>
                     </div>
+                    
                     <div class="apps">
-                        <div class="app-item">
-                            <i class="fa-brands fa-apple"></i>
-                            <div class="app-text">
-                                <h3>Download on</h3>
-                                <h1>App Store</h1>
-                            </div>
-                        </div>
+                       
+                            <button class="app-item">
+                                <i class="fa-brands fa-google-play"></i>
+                                <div class="app-text">
+                                    <h3>Get it on</h3>
+                                    <h1>Google Play</h1>
+                                </div>
+                            </button>
+                    
+                        
+                            <button class="app-item">
+                                <i class="fa-brands fa-apple"></i>
+                                <div class="app-text">
+                                    <h3>Download on</h3>
+                                    <h1>App Store</h1>
+                                </div>
+                            </button>
+                    
+                        
                     </div>
                 </div>
-                <div class="download image-spacing">
+                <div class="picture-border">
+                    <div class="download-picture">
+
+                    </div>
                 </div>
             </div>
         </div>
         
     </section>
 
+    <section>
+        <div class="footer-border">
+            <div class="footer">
+
+                <div class="footer-item" id="footer">
+                    <h1 class="header">Lucious</h1>
+                    <div class="footer-content">
+                        <p>Features</p>
+                        <p>Security</p>
+                        <p>Download</p>
+                        <p>Privacy</p>
+                    </div>
+                </div>
+
+                <div class="footer-item" id="footer">
+                    <h1 class="header">Company</h1>
+                    <div class="footer-content">
+                        <p><a href="">About</a></p>
+                        <p><a href="">Blog</a></p>
+                        <p><a href="">Brand Center</a></p>
+                        <p><a href="">Career</a></p>
+                    </div>
+                </div>
+
+                <div class="footer-item" id="footer">
+                    <h1 class="header">Download</h1>
+                    <div class="footer-content">
+                        <p><a href="">Mac/PC</a></p>
+                        <p><a href="">Android</a></p>
+                        <p><a href="">iPhone</a></p>
+                    </div>
+                </div>
+                
+                <div class="footer-item" id="footer">
+                    <h1 class="header">Help</h1>
+                    <div class="footer-content">
+                        <p><a href="">Help</a></p>
+                        <p><a href="">Center</a></p>
+                        <p><a href="">Facebook</a></p>
+                        <p><a href="">Twitter</a></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-2">
+                <p>prog_bio_ 2020 All Rights Reserved</p>
+                <p>Privacy & Terms <i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+
+        <div class="pop-border" id="popup">
+            <div class="pop-up">
+                <div class="pop-img"></div>
+                <div class="message-border">
+                    <div class="message pad">
+                        <a href=""><button onclick="closePopup()"><i class="fa-regular fa-circle-xmark"></i></button></a>
+                        <div>
+                            <h3>ONLY TODAY!</h3>
+                            <h1>Get 25% OFF</h1>
     
+                            <p>Lorem ipsum is a dummy text used for typing 
+                                dummy texts to be replaced by more relevant
+                                information later</p>
+    
+                            <a href=""><button class="order-now">Order Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/scripts.js"></script>
 
 </body>
 </html>
